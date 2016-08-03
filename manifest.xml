@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<canvashack>
+	<name>Canvabadges</name>
+	<id>canvabadges</id>
+	<description>Canvabadges let you award badges to students in courses based on their total grade in the course and their completion of course modules. You can also put a manual approval step on as well that requires your final sign-off before they receive the badge.</description>
+	<authors>
+		<author>
+			<name>Brian Whitmer</name>
+		</author>
+		<author>
+			<name>Seth Battis</name>
+			<email>SethBattis@stmarksschool.org</email>
+		</author>
+	</authors>
+	<components>
+		<javascript>canvabadges.js</javascript>
+		<canvas>
+			<pages>
+				<include>
+					<page>
+						<type>regex</type>
+						<pattern>%.*%</pattern>
+					</page>
+				</include>
+			</pages>
+			<dom>
+				<bundle>
+					<event>load</event>
+					<action>show()</action>
+					<selector>body</selector>
+				</bundle>
+			</dom>
+		</canvas>
+	</components>
+</canvashack>
